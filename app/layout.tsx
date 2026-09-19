@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import "./styles.css";
-const site = "https://nomyr-security.github.io/nomyr-landing/";
+const site = "https://nomyr.io/";
 export const metadata: Metadata = {
   metadataBase: new URL(site),
   title: "Nomyr — Open-Source Non-Human Identity Security",

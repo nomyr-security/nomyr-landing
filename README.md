@@ -2,7 +2,7 @@
 
 The public website for [Nomyr](https://github.com/nomyr-security/nomyr), an open-source non-human identity security project.
 
-**Live site:** https://nomyr-security.github.io/nomyr-landing/
+**Live site:** https://nomyr.io/
 
 ## Development
 
@@ -19,12 +19,12 @@ Open http://127.0.0.1:4311. The website is independent of the Nomyr product appl
 
 ```sh
 npm run typecheck
-NEXT_PUBLIC_BASE_PATH=/nomyr-landing npm run build
+npm run build
 ```
 
 The static export is written to `out/`. The Pages workflow builds and deploys every push to `main`. GitHub Pages must use **GitHub Actions** as its publishing source.
 
-For a root-domain deployment, build without `NEXT_PUBLIC_BASE_PATH` and update the canonical URL, sitemap, and metadata to the final domain.
+The production site uses `nomyr.io` at the domain root. For a project-path preview, set `NEXT_PUBLIC_BASE_PATH` explicitly.
 
 ## Design and content
 

@@ -22,7 +22,6 @@ jobs:
       - run: npm run typecheck
       - run: npm run build
         env:
-          NEXT_PUBLIC_BASE_PATH: /nomyr-landing
           NEXT_TELEMETRY_DISABLED: "1"
       - uses: actions/upload-pages-artifact@v3
         with:
