@@ -1,5 +1,30 @@
 import { InstallCommand, SourceTerminal } from "./source-terminal";
 
+type GraphFlowDotProps = {
+  path: string;
+  color: string;
+  duration: number;
+  delay: number;
+};
+
+function GraphFlowDot({
+  path,
+  color,
+  duration,
+  delay,
+}: GraphFlowDotProps) {
+  return (
+    <circle className="hg-flow-dot" r="3" fill={color}>
+      <animateMotion
+        path={path}
+        dur={`${duration}s`}
+        begin={`${delay}s`}
+        repeatCount="indefinite"
+      />
+    </circle>
+  );
+}
+
 export function Hero() {
   return (
     <header className="masthead" id="top">
@@ -249,7 +274,7 @@ export function Hero() {
           </div>
         </details>
         <a className="brand" href="#top" aria-label="Nomyr home">
-          <span className="brand-mark"></span>Nomyr
+          <img src={`${process.env.NEXT_PUBLIC_BASE_PATH ?? ""}/brand/nomyr-lockup-on-dark.svg`} alt="Nomyr" width="114" height="32" />
         </a>
         <div className="navlinks">
           <a href="#platform">Platform</a>
@@ -320,7 +345,10 @@ export function Hero() {
           role="region"
           aria-label="Illustrative identity graph; scroll horizontally on small screens"
         >
-          <div className="hg" style={{ width: "1180px", height: "420px" }}>
+          <div
+            className="hg motion-region"
+            style={{ width: "1180px", height: "420px" }}
+          >
             <svg
               className="hg-edges"
               width="1180"
@@ -450,6 +478,74 @@ export function Hero() {
                 strokeDasharray="2 4"
                 opacity="0.7"
               ></path>
+              <g className="hg-flow" filter="url(#hgglow)">
+                <GraphFlowDot
+                  path="M210 51 C 320 51, 330 204, 420 204"
+                  color="#3FB5C4"
+                  duration={6.8}
+                  delay={-1.2}
+                />
+                <GraphFlowDot
+                  path="M210 125 C 320 125, 330 204, 420 204"
+                  color="#3FB5C4"
+                  duration={7.4}
+                  delay={-4.6}
+                />
+                <GraphFlowDot
+                  path="M210 199 C 320 199, 330 204, 420 204"
+                  color="#3FB5C4"
+                  duration={6.2}
+                  delay={-3.1}
+                />
+                <GraphFlowDot
+                  path="M210 273 C 320 273, 330 204, 420 204"
+                  color="#3FB5C4"
+                  duration={7.8}
+                  delay={-5.7}
+                />
+                <GraphFlowDot
+                  path="M210 347 C 320 347, 330 204, 420 204"
+                  color="#3FB5C4"
+                  duration={7}
+                  delay={-2.4}
+                />
+                <GraphFlowDot
+                  path="M608 204 C 660 204, 650 173, 700 173"
+                  color="#07C983"
+                  duration={5.2}
+                  delay={-2.8}
+                />
+                <GraphFlowDot
+                  path="M608 204 C 660 204, 650 293, 700 293"
+                  color="#3FB5C4"
+                  duration={5.8}
+                  delay={-1.6}
+                />
+                <GraphFlowDot
+                  path="M856 173 C 878 173, 870 131, 890 131"
+                  color="#3FB5C4"
+                  duration={4.8}
+                  delay={-3.6}
+                />
+                <GraphFlowDot
+                  path="M1046 131 C 1058 131, 1056 193, 1064 193"
+                  color="#FF9DA4"
+                  duration={4.2}
+                  delay={-1.8}
+                />
+                <GraphFlowDot
+                  path="M856 293 C 878 293, 870 255, 890 255"
+                  color="#B78CE8"
+                  duration={5.1}
+                  delay={-2.2}
+                />
+                <GraphFlowDot
+                  path="M1046 255 C 1058 255, 1056 193, 1064 193"
+                  color="#B8C9C9"
+                  duration={4.6}
+                  delay={-3.4}
+                />
+              </g>
             </svg>
 
             <div

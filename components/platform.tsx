@@ -75,7 +75,7 @@ export function Platform() {
               mid-severity finding on a widely-reachable identity stops hiding
               behind its rating.
             </p>
-            <div className="panel-art">
+            <div className="panel-art motion-region">
               <svg
                 viewBox="0 0 300 224"
                 className="art"
@@ -87,30 +87,36 @@ export function Platform() {
                 <circle cx="150" cy="112" r="94" stroke="#E1E9E8"></circle>
                 <circle cx="150" cy="112" r="64" stroke="#E1E9E8"></circle>
                 <circle cx="150" cy="112" r="34" stroke="#E1E9E8"></circle>
-                <circle cx="182.2" cy="23.7" r="3.2" fill="#B01E2E"></circle>
-                <circle cx="217.4" cy="46.4" r="3.2" fill="#B01E2E"></circle>
-                <circle cx="239.1" cy="82.1" r="3.2" fill="#B01E2E"></circle>
-                <circle cx="243.3" cy="123.8" r="3.2" fill="#B01E2E"></circle>
-                <circle cx="228.9" cy="163.1" r="3.2" fill="#B01E2E"></circle>
-                <circle cx="198.9" cy="192.3" r="3.2" fill="#B01E2E"></circle>
-                <circle cx="159.3" cy="205.5" r="3.2" fill="#B01E2E"></circle>
-                <circle cx="117.8" cy="200.3" r="3.2" fill="#B01E2E"></circle>
-                <circle cx="82.6" cy="177.6" r="3.2" fill="#B01E2E"></circle>
-                <circle cx="60.9" cy="141.9" r="3.2" fill="#B01E2E"></circle>
-                <circle cx="56.7" cy="100.2" r="3.2" fill="#B01E2E"></circle>
-                <circle cx="71.1" cy="60.9" r="3.2" fill="#B01E2E"></circle>
-                <circle cx="101.1" cy="31.7" r="3.2" fill="#B01E2E"></circle>
-                <circle cx="140.7" cy="18.5" r="3.2" fill="#B01E2E"></circle>
-                <circle cx="171.9" cy="51.9" r="3.2" fill="#C98A2E"></circle>
-                <circle cx="210.7" cy="91.7" r="3.2" fill="#C98A2E"></circle>
-                <circle cx="203.7" cy="146.8" r="3.2" fill="#C98A2E"></circle>
-                <circle cx="156.3" cy="175.7" r="3.2" fill="#C98A2E"></circle>
-                <circle cx="104.1" cy="156.6" r="3.2" fill="#C98A2E"></circle>
-                <circle cx="86.5" cy="104.0" r="3.2" fill="#C98A2E"></circle>
-                <circle cx="116.7" cy="57.4" r="3.2" fill="#C98A2E"></circle>
-                <circle cx="161.7" cy="80.1" r="3.2" fill="#0C3B43"></circle>
-                <circle cx="171.8" cy="138.1" r="3.2" fill="#0C3B43"></circle>
-                <circle cx="116.5" cy="117.9" r="3.2" fill="#0C3B43"></circle>
+                <g className="reach-orbit reach-orbit-outer">
+                  <circle cx="182.2" cy="23.7" r="3.2" fill="#B01E2E"></circle>
+                  <circle cx="217.4" cy="46.4" r="3.2" fill="#B01E2E"></circle>
+                  <circle cx="239.1" cy="82.1" r="3.2" fill="#B01E2E"></circle>
+                  <circle cx="243.3" cy="123.8" r="3.2" fill="#B01E2E"></circle>
+                  <circle cx="228.9" cy="163.1" r="3.2" fill="#B01E2E"></circle>
+                  <circle cx="198.9" cy="192.3" r="3.2" fill="#B01E2E"></circle>
+                  <circle cx="159.3" cy="205.5" r="3.2" fill="#B01E2E"></circle>
+                  <circle cx="117.8" cy="200.3" r="3.2" fill="#B01E2E"></circle>
+                  <circle cx="82.6" cy="177.6" r="3.2" fill="#B01E2E"></circle>
+                  <circle cx="60.9" cy="141.9" r="3.2" fill="#B01E2E"></circle>
+                  <circle cx="56.7" cy="100.2" r="3.2" fill="#B01E2E"></circle>
+                  <circle cx="71.1" cy="60.9" r="3.2" fill="#B01E2E"></circle>
+                  <circle cx="101.1" cy="31.7" r="3.2" fill="#B01E2E"></circle>
+                  <circle cx="140.7" cy="18.5" r="3.2" fill="#B01E2E"></circle>
+                </g>
+                <g className="reach-orbit reach-orbit-middle">
+                  <circle cx="171.9" cy="51.9" r="3.2" fill="#C98A2E"></circle>
+                  <circle cx="210.7" cy="91.7" r="3.2" fill="#C98A2E"></circle>
+                  <circle cx="203.7" cy="146.8" r="3.2" fill="#C98A2E"></circle>
+                  <circle cx="156.3" cy="175.7" r="3.2" fill="#C98A2E"></circle>
+                  <circle cx="104.1" cy="156.6" r="3.2" fill="#C98A2E"></circle>
+                  <circle cx="86.5" cy="104.0" r="3.2" fill="#C98A2E"></circle>
+                  <circle cx="116.7" cy="57.4" r="3.2" fill="#C98A2E"></circle>
+                </g>
+                <g className="reach-orbit reach-orbit-inner">
+                  <circle cx="161.7" cy="80.1" r="3.2" fill="#0C3B43"></circle>
+                  <circle cx="171.8" cy="138.1" r="3.2" fill="#0C3B43"></circle>
+                  <circle cx="116.5" cy="117.9" r="3.2" fill="#0C3B43"></circle>
+                </g>
                 <circle cx="150" cy="112" r="13" fill="#0C3B43"></circle>
                 <circle
                   cx="150"

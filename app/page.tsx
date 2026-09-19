@@ -9,6 +9,7 @@ import { Community } from "../components/community";
 import { Integrations } from "../components/integrations";
 import { GetStarted } from "../components/getstarted";
 import { Footer } from "../components/footer";
+import { MotionController } from "../components/motion-controller";
 
 export default function Home() {
   return (
@@ -29,6 +30,7 @@ export default function Home() {
         <GetStarted />
       </main>
       <Footer />
+      <MotionController />
     </div>
   );
 }
