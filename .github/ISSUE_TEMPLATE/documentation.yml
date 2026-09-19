@@ -1,0 +1,32 @@
+name: Documentation or content correction
+description: Report unclear, missing, or inaccurate website content.
+title: "docs: "
+labels:
+  - documentation
+body:
+  - type: input
+    id: location
+    attributes:
+      label: Page or file
+      placeholder: https://nomyr.io/#open-source or README.md
+    validations:
+      required: true
+  - type: textarea
+    id: current
+    attributes:
+      label: Current content or problem
+      description: Quote only the relevant text and explain what is unclear, missing, or inaccurate.
+    validations:
+      required: true
+  - type: textarea
+    id: proposed
+    attributes:
+      label: Suggested correction
+      description: Provide replacement wording or the information that should be added.
+    validations:
+      required: true
+  - type: textarea
+    id: sources
+    attributes:
+      label: Supporting sources
+      description: Link primary sources for factual or technical corrections.

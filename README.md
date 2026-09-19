@@ -44,7 +44,9 @@ The source export runtime is not shipped. Contact buttons open an email draft; t
 
 ## Contributing
 
-Open an issue for substantial content or design changes. Keep desktop visual fidelity, mobile usability, semantic markup, keyboard navigation, and reduced-motion behavior intact. Run type checking and a static build before submitting a pull request. Sign commits with `git commit -s`.
+Read [CONTRIBUTING.md](CONTRIBUTING.md) before opening an issue or pull request.
+It documents issue quality, Conventional Commit messages, DCO sign-offs, local
+validation, visual evidence, and review expectations.
 
 ## License
 

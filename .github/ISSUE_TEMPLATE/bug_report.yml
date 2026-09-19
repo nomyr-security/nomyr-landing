@@ -1,0 +1,59 @@
+name: Bug report
+description: Report a reproducible problem with the Nomyr website.
+title: "fix: "
+labels:
+  - bug
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for reporting a problem. Search existing issues first and remove private data from screenshots and logs.
+  - type: input
+    id: url
+    attributes:
+      label: Affected URL
+      description: Link to the page or section where the problem occurs.
+      placeholder: https://nomyr.io/#platform
+    validations:
+      required: true
+  - type: textarea
+    id: problem
+    attributes:
+      label: What happened?
+      description: Describe the problem and what you expected instead.
+      placeholder: Tell us the actual and expected behavior.
+    validations:
+      required: true
+  - type: textarea
+    id: reproduce
+    attributes:
+      label: Steps to reproduce
+      description: Give the smallest reliable sequence that reproduces the issue.
+      placeholder: |
+        1. Open …
+        2. Select …
+        3. Observe …
+    validations:
+      required: true
+  - type: input
+    id: environment
+    attributes:
+      label: Browser and device
+      description: Include browser version, operating system, device, and viewport when relevant.
+      placeholder: Chrome 150, macOS, 390 × 844 viewport
+    validations:
+      required: true
+  - type: textarea
+    id: evidence
+    attributes:
+      label: Screenshots or additional context
+      description: Add sanitized screenshots, recordings, console output, or related links.
+  - type: checkboxes
+    id: checks
+    attributes:
+      label: Submission checks
+      options:
+        - label: I searched existing issues for this problem.
+          required: true
+        - label: I removed credentials, personal data, and private infrastructure details.
+          required: true

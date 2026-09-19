@@ -1,0 +1,39 @@
+name: Feature request
+description: Propose an improvement to the Nomyr website.
+title: "feat: "
+labels:
+  - enhancement
+body:
+  - type: textarea
+    id: problem
+    attributes:
+      label: Problem to solve
+      description: Who has this problem, and what are they unable to do today?
+    validations:
+      required: true
+  - type: textarea
+    id: outcome
+    attributes:
+      label: Proposed outcome
+      description: Describe the desired user experience without prescribing unnecessary implementation details.
+    validations:
+      required: true
+  - type: textarea
+    id: alternatives
+    attributes:
+      label: Alternatives considered
+      description: Share workarounds or other approaches you considered.
+  - type: textarea
+    id: design
+    attributes:
+      label: Design and accessibility notes
+      description: Include references, mockups, responsive behavior, keyboard behavior, or motion considerations.
+  - type: checkboxes
+    id: checks
+    attributes:
+      label: Submission checks
+      options:
+        - label: I searched existing issues and pull requests for this request.
+          required: true
+        - label: This request describes a public website need rather than an unannounced product claim.
+          required: true
