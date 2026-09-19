@@ -15,7 +15,7 @@ export function Footer() {
             }}
           >
             <a className="brand" href="#top" aria-label="Nomyr home">
-              <span className="brand-mark"></span>Nomyr
+              <img src={`${process.env.NEXT_PUBLIC_BASE_PATH ?? ""}/brand/nomyr-lockup.svg`} alt="Nomyr" width="114" height="32" />
             </a>
             <div
               style={{ fontSize: "13px", lineHeight: "21px", color: "#4E6C6E" }}
