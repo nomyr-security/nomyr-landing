@@ -715,7 +715,82 @@ export function Hero() {
             </div>
           </div>
         </div>
-        <div style={{ height: "124px" }}></div>
+
+        <div
+          className="mobile-hg motion-region"
+          aria-label="Identity graph from connected sources through Nomyr to an accountable owner, identity, credentials, workloads and a sensitive target"
+        >
+          <div className="mhg-topline">
+            <span>Connected sources</span>
+            <span>14 source types</span>
+          </div>
+          <div className="mhg-sources">
+            {[
+              "Okta",
+              "Google Cloud",
+              "GitHub",
+              "Jenkins",
+              "Vault",
+              "+9 more",
+            ].map((source) => (
+              <span className="mhg-source" key={source}>
+                <i></i>
+                {source}
+              </span>
+            ))}
+          </div>
+
+          <div className="mhg-flow" aria-hidden="true"><i></i></div>
+
+          <div className="mhg-hub">
+            <strong>Nomyr</strong>
+            <span>Identity graph</span>
+          </div>
+
+          <div className="mhg-flow" aria-hidden="true"><i></i></div>
+
+          <div className="mhg-grid mhg-resolved">
+            <div className="mhg-card mhg-owner">
+              <span>Accountable owner</span>
+              <strong>Billing Team</strong>
+              <small>confirmed · catalog</small>
+            </div>
+            <div className="mhg-card mhg-identity">
+              <span>Non-human identity</span>
+              <strong>svc-billing-worker</strong>
+              <small>owned · active</small>
+            </div>
+          </div>
+
+          <div className="mhg-flow mhg-flow-split" aria-hidden="true"><i></i></div>
+
+          <div className="mhg-grid mhg-paths">
+            <div className="mhg-card mhg-credential">
+              <span>Credential</span>
+              <strong>key 9f21…c04a</strong>
+              <small>configured path</small>
+            </div>
+            <div className="mhg-card mhg-condition">
+              <span>Workload</span>
+              <strong>billing-worker</strong>
+              <small>path condition · unread</small>
+            </div>
+          </div>
+
+          <div className="mhg-flow mhg-flow-danger" aria-hidden="true"><i></i></div>
+
+          <div className="mhg-target">
+            <span>Sensitive target</span>
+            <strong>billing-prod</strong>
+          </div>
+          <div className="mhg-legend">
+            <span><i className="mhg-configured"></i>Configured</span>
+            <span><i className="mhg-unknown"></i>Unknown condition</span>
+            <span><i className="mhg-sensitive"></i>Sensitive reach</span>
+          </div>
+        </div>
+
+        <div className="hero-tail"></div>
       </div>
     </header>
   );
