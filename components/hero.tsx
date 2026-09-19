@@ -274,12 +274,6 @@ export function Hero() {
           GitHub
         </a>
         <a
-          className="btn btn-line-dark"
-          href="https://github.com/nomyr-security/nomyr"
-        >
-          View code
-        </a>
-        <a
           className="btn btn-accent"
           href="mailto:oss@nomyr.io?subject=Nomyr%20walkthrough"
         >
