@@ -466,10 +466,10 @@ h3 {
     rise 0.7s cubic-bezier(0.2, 0.7, 0.2, 1) forwards,
     hubpulse 4.5s ease-in-out 1.2s infinite;
 }
-.hg-hub-name {
-  font-size: 18px;
-  font-weight: 700;
-  letter-spacing: -0.01em;
+.hg-hub-logo {
+  display: block;
+  width: 104px;
+  height: auto;
 }
 .hg-hub-sub {
   font-family: "IBM Plex Mono", monospace;
@@ -1719,8 +1719,10 @@ summary:focus-visible {
     background: linear-gradient(160deg, #14464f, #0c3b43);
     box-shadow: 0 0 30px rgba(7, 201, 131, 0.14);
   }
-  .mhg-hub strong {
-    font-size: 18px;
+  .mhg-hub img {
+    display: block;
+    width: 108px;
+    height: auto;
   }
   .mhg-hub span,
   .mhg-card > span,

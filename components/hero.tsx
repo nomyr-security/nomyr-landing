@@ -585,7 +585,7 @@ export function Hero() {
                   width="15"
                   height="15"
                   viewBox="0 0 24 24"
-                  fill="#CFE0DE"
+                  fill="#007DC1"
                   role="img"
                   aria-label="Okta"
                 >
@@ -603,7 +603,7 @@ export function Hero() {
                   width="15"
                   height="15"
                   viewBox="0 0 24 24"
-                  fill="#CFE0DE"
+                  fill="#4285F4"
                   role="img"
                   aria-label="Google Cloud"
                 >
@@ -621,7 +621,7 @@ export function Hero() {
                   width="15"
                   height="15"
                   viewBox="0 0 24 24"
-                  fill="#CFE0DE"
+                  fill="#ECF3F1"
                   role="img"
                   aria-label="GitHub"
                 >
@@ -639,7 +639,7 @@ export function Hero() {
                   width="15"
                   height="15"
                   viewBox="0 0 24 24"
-                  fill="#CFE0DE"
+                  fill="#D24939"
                   role="img"
                   aria-label="Jenkins"
                 >
@@ -657,7 +657,7 @@ export function Hero() {
                   width="15"
                   height="15"
                   viewBox="0 0 24 24"
-                  fill="#CFE0DE"
+                  fill="#ECF3F1"
                   role="img"
                   aria-label="Vault"
                 >
@@ -674,7 +674,13 @@ export function Hero() {
             </div>
 
             <div className="hg-hub rise" style={{ animationDelay: "0.75s" }}>
-              <div className="hg-hub-name">Nomyr</div>
+              <img
+                className="hg-hub-logo"
+                src={`${process.env.NEXT_PUBLIC_BASE_PATH ?? ""}/brand/nomyr-lockup-on-dark.svg`}
+                alt="Nomyr"
+                width="114"
+                height="32"
+              />
               <div className="hg-hub-sub">identity graph</div>
             </div>
 
@@ -774,7 +780,12 @@ export function Hero() {
           <div className="mhg-flow" aria-hidden="true"><i></i></div>
 
           <div className="mhg-hub">
-            <strong>Nomyr</strong>
+            <img
+              src={`${process.env.NEXT_PUBLIC_BASE_PATH ?? ""}/brand/nomyr-lockup-on-dark.svg`}
+              alt="Nomyr"
+              width="114"
+              height="32"
+            />
             <span>Identity graph</span>
           </div>
 
