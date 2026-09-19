@@ -98,7 +98,6 @@ export function SourceTerminal() {
           ))}
         </div>
         <span className="grow" />
-        <span className="term-lic">AGPL-3.0</span>
       </div>
       <div
         className="term-body"

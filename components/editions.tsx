@@ -31,7 +31,7 @@ export function Editions() {
             <div className="ed-cell ed-col ed-hi" role="columnheader">
               <span className="ed-tag">Start here</span>
               <div className="ed-name">Community</div>
-              <div className="ed-sub">AGPL 3.0 · self-hosted</div>
+              <div className="ed-sub">Open source · self-hosted</div>
             </div>
             <div className="ed-cell ed-col" role="columnheader">
               <div className="ed-name">Cloud</div>

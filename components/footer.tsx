@@ -41,8 +41,8 @@ export function Footer() {
               <a href="https://github.com/nomyr-security/nomyr#local-development">
                 Self-hosting guide
               </a>
-              <a href="https://github.com/nomyr-security/nomyr/blob/main/LICENSING.md">
-                Licensing
+              <a href="https://github.com/nomyr-security/nomyr/issues">
+                Report an issue
               </a>
               <a href="https://github.com/nomyr-security/nomyr/blob/main/CONTRIBUTING.md">
                 Contributing
@@ -75,7 +75,7 @@ export function Footer() {
             © 2026 Nomyr. Non-human identity security, from discovery to
             retirement.
           </span>
-          <span>AGPL-3.0 core · Apache-2.0 SDKs</span>
+          <span>Built on evidence.</span>
         </div>
       </div>
     </footer>

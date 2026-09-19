@@ -35,7 +35,7 @@ The site recreates the supplied 1440px landing artboard with React section compo
 - `components/`: section content and interactive source terminal
 - `public/`: favicon, robots directive, and sitemap
 
-The source export runtime is not shipped. Contact buttons open an email draft; they do not submit data. Repository links point to the actual project, and the source terminal uses documented commands. Product illustrations and edition comparisons describe intended product scope rather than customer results. Licensing reflects AGPL-3.0-only core and Apache-2.0 SDK/contracts.
+The source export runtime is not shipped. Contact buttons open an email draft; they do not submit data. Repository links point to the actual project, and the source terminal uses documented commands. Product illustrations and edition comparisons describe intended product scope rather than customer results.
 
 ## Contributing
 

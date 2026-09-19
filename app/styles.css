@@ -265,13 +265,6 @@ h3 {
   font-weight: 600;
   color: #ecf3f1;
 }
-.ghchip .lic {
-  font-family: "IBM Plex Mono", monospace;
-  font-size: 10.5px;
-  color: #b8c9c9;
-  border-left: 1px solid rgba(236, 243, 241, 0.22);
-  padding-left: 8px;
-}
 
 .hero {
   position: relative;
@@ -1111,15 +1104,6 @@ h3 {
   background: rgba(7, 201, 131, 0.16);
   color: #45dda2;
 }
-.term-lic {
-  font-family: "IBM Plex Mono", monospace;
-  font-size: 10.5px;
-  letter-spacing: 0.06em;
-  color: #b8c9c9;
-  border: 1px solid rgba(236, 243, 241, 0.22);
-  border-radius: 999px;
-  padding: 3px 9px;
-}
 .term-body {
   padding: 18px 18px 20px;
   display: flex;
@@ -1829,10 +1813,6 @@ summary:focus-visible {
     height: 40.5px;
   }
 }
-.term-lic {
-  white-space: nowrap;
-  flex-shrink: 0;
-}
 @media (max-width: 600px) {
   .term-bar {
     padding-inline: 10px;
@@ -1844,10 +1824,6 @@ summary:focus-visible {
   }
   .term-tab {
     font-size: 10px;
-    padding-inline: 6px;
-  }
-  .term-lic {
-    font-size: 9px;
     padding-inline: 6px;
   }
 }

@@ -1,4 +1,4 @@
-import { InstallCommand, SourceTerminal } from "./source-terminal";
+import { SourceTerminal } from "./source-terminal";
 
 export function OpenSource() {
   return (
@@ -15,7 +15,7 @@ export function OpenSource() {
             job well, and none of them can tell you who is accountable for the
             service account that has been reaching production for 214 days.
             Nomyr's core is the open layer that answers that — designed for
-            self-hosting, with an AGPL-3.0 core.
+            self-hosting and transparent, evidence-driven decisions.
           </p>
         </div>
         <div className="oss-split">
@@ -31,11 +31,11 @@ export function OpenSource() {
               </p>
             </div>
             <div className="oss-point">
-              <h3>AGPL core. Apache SDKs.</h3>
+              <h3>Source you can inspect</h3>
               <p>
-                The core uses AGPL-3.0-only; SDKs and public API contracts use
-                Apache-2.0. Explore the source, contribute improvements, and
-                build integrations under clearly documented license boundaries.
+                Explore the source, follow the decisions behind the product, and
+                contribute improvements. Open development gives your team a
+                direct way to understand the platform and shape what comes next.
               </p>
             </div>
             <div className="oss-point">
