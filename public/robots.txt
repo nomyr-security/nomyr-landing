@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://nomyr-security.github.io/nomyr-landing/sitemap.xml
