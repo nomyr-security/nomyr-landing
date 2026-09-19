@@ -1161,113 +1161,6 @@ h3 {
   margin: 0;
 }
 
-/* ---- editions ---- */
-.ed {
-  margin-top: 48px;
-  border: 1px solid #e1e9e8;
-  border-radius: 16px;
-  overflow: hidden;
-  background: #ffffff;
-}
-.ed-head,
-.ed-row {
-  display: grid;
-  grid-template-columns: 1.6fr repeat(3, minmax(0, 1fr));
-  align-items: center;
-}
-.ed-head {
-  background: #f3f7f6;
-  border-bottom: 1px solid #e1e9e8;
-}
-.ed-head .ed-cell {
-  padding-top: 20px;
-  padding-bottom: 18px;
-  justify-content: flex-end;
-}
-.ed-row {
-  border-bottom: 1px solid #e1e9e8;
-}
-.ed-row:last-child {
-  border-bottom: none;
-}
-.ed-row:hover .ed-cell {
-  background-color: #fafcfb;
-}
-.ed-cell {
-  padding: 12px 22px;
-  height: 100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
-.ed-col {
-  text-align: center;
-  align-items: center;
-}
-.ed-hi {
-  background: rgba(7, 201, 131, 0.06);
-}
-.ed-row:hover .ed-hi {
-  background-color: rgba(7, 201, 131, 0.1);
-}
-.ed-tag {
-  font-family: "IBM Plex Mono", monospace;
-  font-size: 10px;
-  letter-spacing: 0.06em;
-  text-transform: uppercase;
-  color: #07603f;
-  background: #dff7ea;
-  border-radius: 999px;
-  padding: 3px 8px;
-  margin-bottom: 8px;
-}
-.ed-cap {
-  font-family: "IBM Plex Mono", monospace;
-  font-size: 11px;
-  letter-spacing: 0.06em;
-  text-transform: uppercase;
-  color: #4e6c6e;
-}
-.ed-name {
-  font-size: 16px;
-  font-weight: 700;
-}
-.ed-sub {
-  font-size: 11.5px;
-  color: #4e6c6e;
-  margin-top: 2px;
-}
-.ed-label {
-  font-size: 13.5px;
-}
-.ck {
-  display: inline-flex;
-  width: 22px;
-  height: 22px;
-  border-radius: 999px;
-  background: #dff7ea;
-  align-items: center;
-  justify-content: center;
-}
-.ck-no {
-  background: transparent;
-  color: #5a7274;
-  font-size: 14px;
-}
-.mk-note {
-  font-size: 11.5px;
-  color: #4e6c6e;
-}
-.ed-foot {
-  display: flex;
-  gap: 12px;
-  align-items: center;
-  justify-content: center;
-  margin-top: 22px;
-  font-size: 13px;
-  color: #4e6c6e;
-}
-
 /* ---- integrations wall ---- */
 .wall {
   display: grid;
@@ -1611,13 +1504,6 @@ summary:focus-visible {
   .foot-cols {
     justify-content: space-between;
   }
-  .ed {
-    overflow-x: auto;
-  }
-  .ed-head,
-  .ed-row {
-    min-width: 760px;
-  }
 }
 @media (max-width: 600px) {
   .nav {
@@ -1760,10 +1646,6 @@ summary:focus-visible {
   .wall {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
-  .ed-foot {
-    align-items: flex-start;
-    line-height: 20px;
-  }
   .term-tab {
     padding-inline: 7px;
   }
@@ -1826,4 +1708,14 @@ summary:focus-visible {
     font-size: 10px;
     padding-inline: 6px;
   }
+}
+.community-link {
+  align-self: flex-start;
+  margin-top: 22px;
+  font-size: 14px;
+  font-weight: 600;
+}
+.community-link:hover {
+  text-decoration: underline;
+  text-underline-offset: 4px;
 }

@@ -39,13 +39,11 @@ export function OpenSource() {
               </p>
             </div>
             <div className="oss-point">
-              <h3>The analysis engine is not the paid part</h3>
+              <h3>Free and open source</h3>
               <p>
-                The open-core vision includes discovery, the graph,
-                effective-access evaluation, posture rules, ownership resolution
-                and the agent control plane. The commercial vision supports
-                organizational scale — never a better answer to the same
-                question.
+                Nomyr is free to explore, self-host, and contribute to. Build
+                with the community, inspect the source, and help shape non-human
+                identity security around the needs of your team.
               </p>
             </div>
           </div>

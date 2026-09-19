@@ -5,12 +5,12 @@ export const metadata: Metadata = {
   metadataBase: new URL(site),
   title: "Nomyr — Open-Source Non-Human Identity Security",
   description:
-    "Open-source non-human identity security: machine identity discovery, ownership, credential lifecycle management, and AI agent governance. Explore Nomyr.",
+    "Free, open-source non-human identity security: machine identity discovery, ownership, credential lifecycle management, and AI agent governance. Explore Nomyr.",
   alternates: { canonical: site },
   openGraph: {
     title: "Nomyr — Every machine identity, and the human who answers for it.",
     description:
-      "Open-source non-human identity security, from discovery to retirement.",
+      "Free, open-source non-human identity security, from discovery to retirement.",
     url: site,
     siteName: "Nomyr",
     type: "website",

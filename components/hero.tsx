@@ -242,7 +242,7 @@ export function Hero() {
             <a href="#platform">Platform</a>
             <a href="#open-source">Open source</a>
             <a href="#integrations">Integrations</a>
-            <a href="#editions">Editions</a>
+            <a href="#community">Community</a>
             <a href="https://github.com/nomyr-security/nomyr#local-development">
               Documentation
             </a>
@@ -258,7 +258,7 @@ export function Hero() {
           <a href="https://github.com/nomyr-security/nomyr#local-development">
             Docs
           </a>
-          <a href="#editions">Pricing</a>
+          <a href="#community">Community</a>
         </div>
         <div className="grow"></div>
         <a className="ghchip" href="https://github.com/nomyr-security/nomyr">
@@ -317,7 +317,7 @@ export function Hero() {
         </div>
         <InstallCommand />
         <div className="hero-note rise" style={{ animationDelay: ".4s" }}>
-          Open by design, from discovery to retirement.
+          Free and open source, from discovery to retirement.
         </div>
 
         <div

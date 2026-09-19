@@ -28,14 +28,14 @@ For a root-domain deployment, build without `NEXT_PUBLIC_BASE_PATH` and update t
 
 ## Design and content
 
-The site recreates the supplied 1440px landing artboard with React section components, its original vector illustrations, IBM Plex Sans/Mono and Instrument Serif typography, gradients, textures, and motion. Responsive layouts adapt the design for tablets and phones; the identity graph and edition comparison remain horizontally scrollable where needed.
+The site recreates the supplied 1440px landing artboard with React section components, its original vector illustrations, IBM Plex Sans/Mono and Instrument Serif typography, gradients, textures, and motion. Responsive layouts adapt the design for tablets and phones; the identity graph remains horizontally scrollable where needed.
 
 - `app/page.tsx`: section composition
 - `app/styles.css`: design styles and responsive adaptations
 - `components/`: section content and interactive source terminal
 - `public/`: favicon, robots directive, and sitemap
 
-The source export runtime is not shipped. Contact buttons open an email draft; they do not submit data. Repository links point to the actual project, and the source terminal uses documented commands. Product illustrations and edition comparisons describe intended product scope rather than customer results.
+The source export runtime is not shipped. Contact buttons open an email draft; they do not submit data. Repository links point to the actual project, and the source terminal uses documented commands. Product illustrations describe intended product scope rather than customer results. The site presents Nomyr as a free, open-source project.
 
 ## Contributing
 

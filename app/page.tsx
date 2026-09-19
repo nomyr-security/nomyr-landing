@@ -5,7 +5,7 @@ import { Platform } from "../components/platform";
 import { EvidenceComparison } from "../components/evidencecomparison";
 import { Lifecycle } from "../components/lifecycle";
 import { OperatingModes } from "../components/operatingmodes";
-import { Editions } from "../components/editions";
+import { Community } from "../components/community";
 import { Integrations } from "../components/integrations";
 import { GetStarted } from "../components/getstarted";
 import { Footer } from "../components/footer";
@@ -24,7 +24,7 @@ export default function Home() {
         <EvidenceComparison />
         <Lifecycle />
         <OperatingModes />
-        <Editions />
+        <Community />
         <Integrations />
         <GetStarted />
       </main>
