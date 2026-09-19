@@ -1,7 +1,9 @@
 import type { Metadata, Viewport } from "next";
+import Script from "next/script";
 import "./styles.css";
 const site = "https://nomyr.io/";
 const assetPath = (process.env.NEXT_PUBLIC_BASE_PATH ?? "");
+const googleAnalyticsId = "G-W1J8TG88J4";
 export const viewport: Viewport = { themeColor: "#0C3B43" };
 
 export const metadata: Metadata = {
@@ -53,6 +55,16 @@ export default function RootLayout({
         />
       </head>
       <body>{children}</body>
+      <Script
+        src={`https://www.googletagmanager.com/gtag/js?id=${googleAnalyticsId}`}
+        strategy="afterInteractive"
+      />
+      <Script id="google-analytics" strategy="afterInteractive">
+        {`window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+gtag('config', '${googleAnalyticsId}');`}
+      </Script>
     </html>
   );
 }
